@@ -9,10 +9,23 @@
   <meta name="description" content="This is vue sample page.">
   <meta name="author" content="naichilab">
   <script src="js/vue.js"></script>
+
 </head>
 
 <body>
-  <h1>Hello World!</h1>
+  <div id="app">
+    {{ message }}
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!'
+      }
+    })
+
+  </script>
 
 </body>
 
